@@ -16,12 +16,17 @@ Clean and minimal Streamlit frontend
 
 # Project Structure
 
-├── app.py                # Main application script (Streamlit)
-├── requirements.txt      # Python dependencies
-├── .env                  # Environment variables for API keys
+├── app.py                     # Main application script (Streamlit)
+
+├── requirements.txt           # Python dependencies
+
+├── .env                       # Environment variables for API keys
+
 ├── logs/
-│   ├── prompt_logs.csv   # Logged prompts (CSV)
-│   └── prompt_logs.json  # Logged prompts (JSON)
+
+│   ├── prompt_logs.csv        # Logged prompts (CSV)
+
+│   └── prompt_logs.json       # Logged prompts (JSON)
 
 
 # Setup & Installation
@@ -30,10 +35,12 @@ Clean and minimal Streamlit frontend
 
 git clone https://github.com/your-username/llm-multi-model-service.git
 cd llm-multi-model-service
+
 2. Create and Activate a Virtual Environment
 
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+
 3. Install Dependencies
 pip install -r requirements.txt
 
@@ -73,11 +80,12 @@ Estimated token count
 
 Example CSV row:
 
-timestamp,prompt,model,response,latency_ms,token_count
+timestamp, prompt, model, response, latency_ms, token_count
+
 2025-07-16 12:00:00,"What is AI?","llama-3.1-8b-instant","AI stands for...",142.5,42
 
 
-🛠# Dependencies
+# Dependencies
 Key packages:
 
 streamlit - Web interface
